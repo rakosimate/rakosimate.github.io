@@ -4,64 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: left;
-            justify-content: left;
-            height: 100vh;
-            background-color: #f0f0f0;
+            background-color: #eae7e6;
+            color: #070606;
         }
 
-        #title {
-            font-size: 44px;
+        @font-face {
+            font-family: 'a';
+            src: url(Alegreya-ExtraBold.ttf) format(ttf);
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'b';
+            src: url(Alegreya-Bold.ttf) format(ttf);
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'c';
+            src: url(AlegreyaSans-Black.ttf) format(ttf);
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        #bigtitle {
+            font-size: 50px;
+            font-weight: bold;
             text-align: center;
+            margin-bottom: 20px;
+            font-family: 'a';
+        }
+
+        #video video {
+            display: block;
+            margin: auto;
+            width: 90%;
             margin-bottom: 20px;
         }
 
+        #smalltitle {
+            font-size: 34px;
+            font-weight: bold;
+            text-align: left;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 5px;
+            font-family: 'b';
+        }
+
         #text {
-            font-size: 24px;
+            font-size: 21px;
             text-align: left;
-            max-width: 80%;
-            margin-left: 10%;
-            margin-right: 10%;
-        }
-
-        #space {
-            font-size: 44px;
-            text-align: left;
-            margin-bottom: 40px;
-        }
-
-        @media (max-width: 600px) {
-            #text {
-                max-width: 100%;
-            }
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 20px;
+            font-family: 'c';
         }
     </style>
 </head>
 
 <body>
-    <div id="space"></div>
-    
-    <div id="title">Rólam</div>
-    <div id="text">Sziasztok! Mihályi Bendegúz vagyok, ahogy már páran jól ismerhettek és a 10. Évfolyam A osztályába járok. Az elmúlt 5 és fél év során sok mindent láttam, hallottam és tapasztaltam Diákönkormányzati Képviselőként. Elnökként az lenne a célom, hogy a mindennapi sulis életbe vigyek egy kis változatosságot a DÖK segítségével. Bácskay Zsombor Elnök úr magasra tette a lécet, de azért én is megteszek minden lehetőt, hogy nektek még jobb legyen.</div>
-    
-    <div id="space"></div>
-    
-    
-    <div id="title">Programterv</div>
-    <div id="text">•Eddigi események, vetélkedők fenntartása továbbra is. (Pl. papírrepülő hajítás)</div>
-    <div id="text">•Új programok, pályázatok havonta. (Pl. változatos témájú rajzverseny)</div>
-    <div id="text">•DÖK napra változatos és kreatív programok. (Pl. piknik, sorverseny, kincsvadászat)</div>
-    <div id="text">•Ötletdoboz, ahova lehet saját ötleteiteket leírhatjátok, majd megvitatásra kerülnek a DÖK gyűléseken.</div>
-    <div id="text">•Adott ünnepekhez illő programok. (Pl. Húsvét->tojásguríás)</div>
-    <div id="text">•Rövid, szakszerű, összeszedett DÖK gyűlések</div>
-    <div id="text">•Ezeken felül, még ami tervben van, az a mikro biztosítása az ebédlőben, illetve éjszakai 12H kosár/foci.</div>
+    <div id="bigtitle">
+        MIHÁLYI BENDEGÚZ
+    </div>
+    <div id="video">
+        <video src="bendekampányvágott.mp4" width="100%" controls></video>
+    </div>
+    <div id="smalltitle">
+        Rólam
+    </div>
+    <div id="text">
+        Sziasztok! Mihályi Bendegúz vagyok, ahogy már páran jól ismerhettek és a 10. Évfolyam A osztályába járok. Az elmúlt 5 és fél év során sok mindent láttam, hallottam és tapasztaltam Diákönkormányzati Képviselőként, illetve diákként. Elnökként az lenne a célom, hogy a mindennapi sulis életbe vigyek egy kis változatosságot a DÖK segítségével. Megteszek minden tőlem telhetőt, hogy a sulis hétköznapok még jobban teljenek. Sok olyan dolog van még, ami eddig nem valósulhatott meg, viszont most ezeknek eljött az ideje. Szavazzatok rám és közös erővel mindent meg tudunk valósítani.
+    </div>
+    <div id="smalltitle">
+        Programterv
+    </div>
+    <div id="text">
+        •	Eddigi események, vetélkedők fenntartása továbbra is. (Pl. papírrepülő hajítás)<br>
+        •	Új programok, pályázatok havonta. (Pl. változatos témájú rajzverseny)<br>
+        •	DÖK napra változatos és kreatív programok. (Pl. piknik, sorverseny, kincsvadászat)<br>
+        •	Ötletdoboz, ahova lehet saját ötleteiteket leírhatjátok, majd megvitatásra kerülnek a DÖK gyűléseken.<br>
+        •	Adott ünnepekhez illő programok. (Pl. Húsvét->tojásguríás)<br>
+        •	Rövid, szakszerű, összeszedett DÖK gyűlések<br>
+        •	Ezeken felül, még ami tervben van, az a mikro biztosítása az ebédlőben, illetve éjszakai 12H kosár/foci.
+    </div>
 </body>
 
 </html>
